@@ -3165,6 +3165,7 @@ public class Main extends Application {
                     avgTeleScale = adList3.get(c).avgTeleScale;
                     avgAutoSwitch = adList3.get(c).avgAutoSwitch;
                     avgTeleSwitch = adList3.get(c).avgTeleSwitch;
+                    avgVault = adList3.get(c).avgVault;
                     avgClimbs = adList3.get(c).avgClimbs;
                     alliance3.allianceHighStrength = adList3.get(c).allianceHighStrength;
                     alliance3.allianceLowStrength = adList3.get(c).allianceLowStrength;
@@ -3173,6 +3174,7 @@ public class Main extends Application {
                     alliance3.avgTeleSwitch = adList3.get(c).avgTeleSwitch;
                     alliance3.avgAutoScale = adList3.get(c).avgAutoScale;
                     alliance3.avgTeleScale = adList3.get(c).avgTeleScale;
+                    alliance3.avgVault = adList3.get(c).avgVault;
                     alliance3.avgClimbs = adList3.get(c).avgClimbs;
                     alliance3.allianceNumber = 3;
 
@@ -3188,6 +3190,7 @@ public class Main extends Application {
         avgTeleScaleText3.setText(String.format("%.1f", avgTeleScale));
         avgAutoSwitchText3.setText(String.format("%.1f", avgAutoSwitch));
         avgTeleSwitchText3.setText(String.format("%.1f", avgTeleSwitch));
+        avgVaultText3.setText(String.format("%.1f", avgVault));
         avgClimbsText3.setText(String.format("%.1f", avgClimbs));
     }
     // Display Alliance 4 Stats
@@ -3209,6 +3212,7 @@ public class Main extends Application {
         double avgTeleScale = 0;
         double avgAutoSwitch = 0;
         double avgTeleSwitch = 0;
+        double avgVault = 0;
         double avgClimbs = 0;
         // if there's three robots, show the score
         if (alliance4TextList.size() == 3) {
@@ -3235,6 +3239,7 @@ public class Main extends Application {
                     avgTeleScale = adList4.get(c).avgTeleScale;
                     avgAutoSwitch = adList4.get(c).avgAutoSwitch;
                     avgTeleSwitch = adList4.get(c).avgTeleSwitch;
+                    avgVault = adList4.get(c).avgVault;
                     avgClimbs = adList4.get(c).avgClimbs;
                     alliance4.allianceHighStrength = adList4.get(c).allianceHighStrength;
                     alliance4.allianceLowStrength = adList4.get(c).allianceLowStrength;
@@ -3243,6 +3248,7 @@ public class Main extends Application {
                     alliance4.avgTeleSwitch = adList4.get(c).avgTeleSwitch;
                     alliance4.avgAutoScale = adList4.get(c).avgAutoScale;
                     alliance4.avgTeleScale = adList4.get(c).avgTeleScale;
+                    alliance4.avgVault = adList4.get(c).avgVault;
                     alliance4.avgClimbs = adList4.get(c).avgClimbs;
                     alliance4.allianceNumber = 4;
 
@@ -3258,6 +3264,7 @@ public class Main extends Application {
         avgTeleScaleText4.setText(String.format("%.1f", avgTeleScale));
         avgAutoSwitchText4.setText(String.format("%.1f", avgAutoSwitch));
         avgTeleSwitchText4.setText(String.format("%.1f", avgTeleSwitch));
+        avgVaultText4.setText(String.format("%.1f", avgVault));
         avgClimbsText4.setText(String.format("%.1f", avgClimbs));
     }
     // Display Alliance 5 Stats
@@ -3279,6 +3286,7 @@ public class Main extends Application {
         double avgTeleScale = 0;
         double avgAutoSwitch = 0;
         double avgTeleSwitch = 0;
+        double avgVault = 0;
         double avgClimbs = 0;
         // if there's three robots, show the score
         if (alliance5TextList.size() == 3) {
@@ -3305,6 +3313,7 @@ public class Main extends Application {
                     avgTeleScale = adList5.get(c).avgTeleScale;
                     avgAutoSwitch = adList5.get(c).avgAutoSwitch;
                     avgTeleSwitch = adList5.get(c).avgTeleSwitch;
+                    avgVault = adList5.get(c).avgVault;
                     avgClimbs = adList5.get(c).avgClimbs;
                     alliance5.allianceHighStrength = adList5.get(c).allianceHighStrength;
                     alliance5.allianceLowStrength = adList5.get(c).allianceLowStrength;
@@ -3313,6 +3322,7 @@ public class Main extends Application {
                     alliance5.avgTeleSwitch = adList5.get(c).avgTeleSwitch;
                     alliance5.avgAutoScale = adList5.get(c).avgAutoScale;
                     alliance5.avgTeleScale = adList5.get(c).avgTeleScale;
+                    alliance5.avgVault = adList5.get(c).avgVault;
                     alliance5.avgClimbs = adList5.get(c).avgClimbs;
                     alliance5.allianceNumber = 5;
 
@@ -3328,6 +3338,7 @@ public class Main extends Application {
         avgTeleScaleText5.setText(String.format("%.1f", avgTeleScale));
         avgAutoSwitchText5.setText(String.format("%.1f", avgAutoSwitch));
         avgTeleSwitchText5.setText(String.format("%.1f", avgTeleSwitch));
+        avgVaultText5.setText(String.format("%.1f", avgVault));
         avgClimbsText5.setText(String.format("%.1f", avgClimbs));
     }
     // Display Alliance 6 Stats
@@ -3349,6 +3360,7 @@ public class Main extends Application {
         double avgTeleScale = 0;
         double avgAutoSwitch = 0;
         double avgTeleSwitch = 0;
+        double avgVault = 0;
         double avgClimbs = 0;
         // if there's three robots, show the score
         if (alliance6TextList.size() == 3) {
@@ -3375,6 +3387,7 @@ public class Main extends Application {
                     avgTeleScale = adList6.get(c).avgTeleScale;
                     avgAutoSwitch = adList6.get(c).avgAutoSwitch;
                     avgTeleSwitch = adList6.get(c).avgTeleSwitch;
+                    avgVault = adList6.get(c).avgVault;
                     avgClimbs = adList6.get(c).avgClimbs;
                     alliance6.allianceHighStrength = adList6.get(c).allianceHighStrength;
                     alliance6.allianceLowStrength = adList6.get(c).allianceLowStrength;
@@ -3383,6 +3396,7 @@ public class Main extends Application {
                     alliance6.avgTeleSwitch = adList6.get(c).avgTeleSwitch;
                     alliance6.avgAutoScale = adList6.get(c).avgAutoScale;
                     alliance6.avgTeleScale = adList6.get(c).avgTeleScale;
+                    alliance6.avgVault = adList6.get(c).avgVault;
                     alliance6.avgClimbs = adList6.get(c).avgClimbs;
                     alliance6.allianceNumber = 6;
 
@@ -3398,6 +3412,7 @@ public class Main extends Application {
         avgTeleScaleText6.setText(String.format("%.1f", avgTeleScale));
         avgAutoSwitchText6.setText(String.format("%.1f", avgAutoSwitch));
         avgTeleSwitchText6.setText(String.format("%.1f", avgTeleSwitch));
+        avgVaultText6.setText(String.format("%.1f", avgVault));
         avgClimbsText6.setText(String.format("%.1f", avgClimbs));
     }
     // Display Alliance 7 Stats
@@ -3419,6 +3434,7 @@ public class Main extends Application {
         double avgTeleScale = 0;
         double avgAutoSwitch = 0;
         double avgTeleSwitch = 0;
+        double avgVault = 0;
         double avgClimbs = 0;
         // if there's three robots, show the score
         if (alliance7TextList.size() == 3) {
@@ -3445,6 +3461,7 @@ public class Main extends Application {
                     avgTeleScale = adList7.get(c).avgTeleScale;
                     avgAutoSwitch = adList7.get(c).avgAutoSwitch;
                     avgTeleSwitch = adList7.get(c).avgTeleSwitch;
+                    avgVault = adList7.get(c).avgVault;
                     avgClimbs = adList7.get(c).avgClimbs;
                     alliance7.allianceHighStrength = adList7.get(c).allianceHighStrength;
                     alliance7.allianceLowStrength = adList7.get(c).allianceLowStrength;
@@ -3453,6 +3470,7 @@ public class Main extends Application {
                     alliance7.avgTeleSwitch = adList7.get(c).avgTeleSwitch;
                     alliance7.avgAutoScale = adList7.get(c).avgAutoScale;
                     alliance7.avgTeleScale = adList7.get(c).avgTeleScale;
+                    alliance7.avgVault = adList7.get(c).avgVault;
                     alliance7.avgClimbs = adList7.get(c).avgClimbs;
                     alliance7.allianceNumber = 7;
 
@@ -3468,6 +3486,7 @@ public class Main extends Application {
         avgTeleScaleText7.setText(String.format("%.1f", avgTeleScale));
         avgAutoSwitchText7.setText(String.format("%.1f", avgAutoSwitch));
         avgTeleSwitchText7.setText(String.format("%.1f", avgTeleSwitch));
+        avgVaultText7.setText(String.format("%.1f", avgVault));
         avgClimbsText7.setText(String.format("%.1f", avgClimbs));
     }
     // Display Alliance 8 Stats
@@ -3489,6 +3508,7 @@ public class Main extends Application {
         double avgTeleScale = 0;
         double avgAutoSwitch = 0;
         double avgTeleSwitch = 0;
+        double avgVault = 0;
         double avgClimbs = 0;
         // if there's three robots, show the score
         if (alliance8TextList.size() == 3) {
@@ -3515,6 +3535,7 @@ public class Main extends Application {
                     avgTeleScale = adList8.get(c).avgTeleScale;
                     avgAutoSwitch = adList8.get(c).avgAutoSwitch;
                     avgTeleSwitch = adList8.get(c).avgTeleSwitch;
+                    avgVault = adList8.get(c).avgVault;
                     avgClimbs = adList8.get(c).avgClimbs;
                     alliance8.allianceHighStrength = adList8.get(c).allianceHighStrength;
                     alliance8.allianceLowStrength = adList8.get(c).allianceLowStrength;
@@ -3523,6 +3544,7 @@ public class Main extends Application {
                     alliance8.avgTeleSwitch = adList8.get(c).avgTeleSwitch;
                     alliance8.avgAutoScale = adList8.get(c).avgAutoScale;
                     alliance8.avgTeleScale = adList8.get(c).avgTeleScale;
+                    alliance8.avgVault = adList8.get(c).avgVault;
                     alliance8.avgClimbs = adList8.get(c).avgClimbs;
                     alliance8.allianceNumber = 8;
 
@@ -3538,6 +3560,7 @@ public class Main extends Application {
         avgTeleScaleText8.setText(String.format("%.1f", avgTeleScale));
         avgAutoSwitchText8.setText(String.format("%.1f", avgAutoSwitch));
         avgTeleSwitchText8.setText(String.format("%.1f", avgTeleSwitch));
+        avgVaultText8.setText(String.format("%.1f", avgVault));
         avgClimbsText8.setText(String.format("%.1f", avgClimbs));
     }
 
@@ -3570,6 +3593,7 @@ public class Main extends Application {
             avgTeleSwitchText1.setText("");
             avgAutoScaleText1.setText("");
             avgTeleScaleText1.setText("");
+            avgVaultText1.setText("");
             avgClimbsText1.setText("");
             predictedScore1.setText("");
         }
@@ -3578,6 +3602,7 @@ public class Main extends Application {
             avgTeleSwitchText2.setText("");
             avgAutoScaleText2.setText("");
             avgTeleScaleText2.setText("");
+            avgVaultText2.setText("");
             avgClimbsText2.setText("");
             predictedScore2.setText("");
         }
@@ -3586,6 +3611,7 @@ public class Main extends Application {
             avgTeleSwitchText3.setText("");
             avgAutoScaleText3.setText("");
             avgTeleScaleText3.setText("");
+            avgVaultText3.setText("");
             avgClimbsText3.setText("");
             predictedScore3.setText("");
         }
@@ -3594,6 +3620,7 @@ public class Main extends Application {
             avgTeleSwitchText4.setText("");
             avgAutoScaleText4.setText("");
             avgTeleScaleText4.setText("");
+            avgVaultText4.setText("");
             avgClimbsText4.setText("");
             predictedScore4.setText("");
         }
@@ -3602,6 +3629,7 @@ public class Main extends Application {
             avgTeleSwitchText5.setText("");
             avgAutoScaleText5.setText("");
             avgTeleScaleText5.setText("");
+            avgVaultText5.setText("");
             avgClimbsText5.setText("");
             predictedScore5.setText("");
         }
@@ -3610,6 +3638,7 @@ public class Main extends Application {
             avgTeleSwitchText6.setText("");
             avgAutoScaleText6.setText("");
             avgTeleScaleText6.setText("");
+            avgVaultText6.setText("");
             avgClimbsText6.setText("");
             predictedScore6.setText("");
         }
@@ -3618,6 +3647,7 @@ public class Main extends Application {
             avgTeleSwitchText7.setText("");
             avgAutoScaleText7.setText("");
             avgTeleScaleText7.setText("");
+            avgVaultText7.setText("");
             avgClimbsText7.setText("");
             predictedScore7.setText("");
         }
@@ -3957,7 +3987,6 @@ public class Main extends Application {
                 getRobot(rankList.get(c).robotNumber).autoScale.rank = 1;
             }
         }
-
         for (int c = 0; c < rankList.size(); c++) {
             if (c > 0) {
                 int prev_rank = getRobot(rankList.get(c-1).robotNumber).totalSwitch.rank;
@@ -4096,7 +4125,7 @@ public class Main extends Application {
         System.out.println("Getting Data from SQL Database");
 
         try {
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/roborebels", "root", "roborebels1153");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/roborebels", "root", "1153");
             Statement stmt;
             ResultSet rs;
 
@@ -4135,14 +4164,15 @@ public class Main extends Application {
                 int rn = rs.getInt("RobotNumber");
                 if (haveRobot(rn)) {
                     String gameEvent = rs.getString("gameEvent");
-                    if (gameEvent.equals("crossBaselineAuto")){getRobot(rn).autoCross.total++;}
-                    if (gameEvent.equals("climbed")){getRobot(rn).climb.total++;}
-                    if (gameEvent.equals("autoSwitch")){getRobot(rn).autoSwitch.total++;}
-                    if (gameEvent.equals("teleSwitch")){getRobot(rn).teleSwitch.total++;}
+                    if (gameEvent.equals("crossBaseline")){getRobot(rn).autoCross.total++;}
+                    if (gameEvent.equals("climb")){getRobot(rn).climb.total++;}
+                    if (gameEvent.equals("autoAllianceSwitch")){getRobot(rn).autoSwitch.total++;}
+                    if (gameEvent.equals("teleopAliianceSwitch")){getRobot(rn).teleSwitch.total++;}
                     if (gameEvent.equals("autoScale")){getRobot(rn).autoScale.total++;}
-                    if (gameEvent.equals("teleScale")){getRobot(rn).teleScale.total++;}
-                    if (gameEvent.equals("autoSwitch") || gameEvent.equals("teleSwitch")){getRobot(rn).totalSwitch.total++;}
-                    if (gameEvent.equals("autoScale") || gameEvent.equals("teleScale")){getRobot(rn).totalScale.total++;}
+                    if (gameEvent.equals("teleopScale")){getRobot(rn).teleScale.total++;}
+                    if (gameEvent.equals("vault")){getRobot(rn).vault.total++;}
+                    if (gameEvent.equals("autoAllianceSwitch") || gameEvent.equals("teleopSwitch")){getRobot(rn).totalSwitch.total++;}
+                    if (gameEvent.equals("autoScale") || gameEvent.equals("teleopScale")){getRobot(rn).totalScale.total++;}
                 }
             }
             rs.close();
