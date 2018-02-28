@@ -32,8 +32,6 @@ public class AllianceData {
         double highStrength = 0.0;
         double rawStrength = 0.0;
 
-        //double totalSwitch = avgAutoSwitch + avgTeleSwitch;
-
         int climbPoints = (int)(avgClimbs) * 30;
         lowStrength += climbPoints;
 

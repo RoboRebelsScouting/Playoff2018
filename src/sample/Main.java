@@ -169,7 +169,7 @@ public class Main extends Application {
     public int avgTeleSwitch2X = 695;
     public int avgTeleSwitch2Y = 140;
     public int avgVault2X = 772;
-    public int avgVault2Y = 73;
+    public int avgVault2Y = 140;
     public int avgClimbs2X = 836;
     public int avgClimbs2Y = 140;
 
@@ -182,7 +182,7 @@ public class Main extends Application {
     public int avgTeleSwitch3X = 695;
     public int avgTeleSwitch3Y = 201;
     public int avgVault3X = 772;
-    public int avgVault3Y = 73;
+    public int avgVault3Y = 201;
     public int avgClimbs3X = 836;
     public int avgClimbs3Y = 201;
 
@@ -195,7 +195,7 @@ public class Main extends Application {
     public int avgTeleSwitch4X = 695;
     public int avgTeleSwitch4Y = 269;
     public int avgVault4X = 772;
-    public int avgVault4Y = 73;
+    public int avgVault4Y = 269;
     public int avgClimbs4X = 836;
     public int avgClimbs4Y = 269;
 
@@ -208,7 +208,7 @@ public class Main extends Application {
     public int avgTeleSwitch5X = 695;
     public int avgTeleSwitch5Y = 333;
     public int avgVault5X = 772;
-    public int avgVault5Y = 73;
+    public int avgVault5Y = 333;
     public int avgClimbs5X = 836;
     public int avgClimbs5Y = 333;
 
@@ -221,7 +221,7 @@ public class Main extends Application {
     public int avgTeleSwitch6X = 695;
     public int avgTeleSwitch6Y = 398;
     public int avgVault6X = 772;
-    public int avgVault6Y = 73;
+    public int avgVault6Y = 398;
     public int avgClimbs6X = 836;
     public int avgClimbs6Y = 398;
 
@@ -234,7 +234,7 @@ public class Main extends Application {
     public int avgTeleSwitch7X = 695;
     public int avgTeleSwitch7Y = 465;
     public int avgVault7X = 772;
-    public int avgVault7Y = 73;
+    public int avgVault7Y = 465;
     public int avgClimbs7X = 836;
     public int avgClimbs7Y = 465;
 
@@ -247,7 +247,7 @@ public class Main extends Application {
     public int avgTeleSwitch8X = 695;
     public int avgTeleSwitch8Y = 528;
     public int avgVault8X = 772;
-    public int avgVault8Y = 73;
+    public int avgVault8Y = 528;
     public int avgClimbs8X = 836;
     public int avgClimbs8Y = 528;
 
@@ -3026,6 +3026,7 @@ public class Main extends Application {
                     alliance1.avgTeleSwitch = adList1.get(c).avgTeleSwitch;
                     alliance1.avgAutoScale = adList1.get(c).avgAutoScale;
                     alliance1.avgTeleScale = adList1.get(c).avgTeleScale;
+                    alliance1.avgVault = adList1.get(c).avgVault;
                     alliance1.avgClimbs = adList1.get(c).avgClimbs;
                     alliance1.allianceNumber = 1;
                 }
@@ -3101,6 +3102,7 @@ public class Main extends Application {
                     alliance2.avgTeleSwitch = adList2.get(c).avgTeleSwitch;
                     alliance2.avgAutoScale = adList2.get(c).avgAutoScale;
                     alliance2.avgTeleScale = adList2.get(c).avgTeleScale;
+                    alliance2.avgVault = adList2.get(c).avgVault;
                     alliance2.avgClimbs = adList2.get(c).avgClimbs;
                     alliance2.allianceNumber = 2;
 
@@ -4074,8 +4076,8 @@ public class Main extends Application {
         // now loop through the lists and set the rank based on avg score
         for (int c = 0; c < rankList.size(); c++) {
             if (c > 0) {
-                int prev_rank = getRobot(rankList.get(c-1).robotNumber).totalSwitch.rank;
-                if (getRobot(rankList.get(c).robotNumber).totalSwitch.avg < getRobot(rankList.get(c-1).robotNumber).totalSwitch.avg) {
+                int prev_rank = getRobot(rankList.get(c - 1).robotNumber).totalSwitch.rank;
+                if (getRobot(rankList.get(c).robotNumber).totalSwitch.avg < getRobot(rankList.get(c - 1).robotNumber).totalSwitch.avg) {
                     getRobot(rankList.get(c).robotNumber).totalSwitch.rank = prev_rank + 1;
                 } else {
                     getRobot(rankList.get(c).robotNumber).totalSwitch.rank = prev_rank;
@@ -4167,7 +4169,9 @@ public class Main extends Application {
                     if (gameEvent.equals("crossBaseline")){getRobot(rn).autoCross.total++;}
                     if (gameEvent.equals("climb")){getRobot(rn).climb.total++;}
                     if (gameEvent.equals("autoAllianceSwitch")){getRobot(rn).autoSwitch.total++;}
-                    if (gameEvent.equals("teleopAliianceSwitch")){getRobot(rn).teleSwitch.total++;}
+                    if (gameEvent.equals("teleopAllianceSwitch")){getRobot(rn).teleSwitch.total++;}
+                    if (gameEvent.equals("autoOpponentSwitch")){getRobot(rn).autoSwitch.total++;}
+                    if (gameEvent.equals("teleopOpponentSwitch")){getRobot(rn).teleSwitch.total++;}
                     if (gameEvent.equals("autoScale")){getRobot(rn).autoScale.total++;}
                     if (gameEvent.equals("teleopScale")){getRobot(rn).teleScale.total++;}
                     if (gameEvent.equals("vault")){getRobot(rn).vault.total++;}
@@ -4185,6 +4189,7 @@ public class Main extends Application {
                 r.teleScale.avg = (double) r.teleScale.total / r.matches;
                 r.autoSwitch.avg = (double) r.autoSwitch.total / r.matches;
                 r.teleSwitch.avg = (double) r.teleSwitch.total / r.matches;
+                r.vault.avg = (double) r.vault.total / r.matches;
                 r.climb.avg = (double) r.climb.total / r.matches;
                 r.totalSwitch.avg = (double) r.totalSwitch.total / r.matches;
                 r.totalScale.avg = (double) r.totalScale.total / r.matches;
